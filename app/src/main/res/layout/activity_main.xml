@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_humanChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human Choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_computerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_humanChoice" />
+
+    <ImageView
+        android:id="@+id/iv_humanChoice"
+        android:layout_width="145dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_humanChoice"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/iv_computerChoice"
+        android:layout_width="145dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_computerChoice"
+        app:srcCompat="@drawable/rock" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Score: Human 0 Computer 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_computerChoice" />
+
+    <Button
+        android:id="@+id/btn_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rock"
+        app:layout_constraintEnd_toStartOf="@+id/btn_paper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+    <Button
+        android:id="@+id/btn_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+    <Button
+        android:id="@+id/btn_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_paper"
+        app:layout_constraintTop_toTopOf="@+id/btn_paper" />
+</androidx.constraintlayout.widget.ConstraintLayout>
